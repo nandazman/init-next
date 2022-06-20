@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
 export default function Home() {
-  const test = "haha";
+  const test = "hahaz";
   console.log({ test })
   return (
     <div>
