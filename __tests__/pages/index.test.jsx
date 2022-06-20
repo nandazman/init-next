@@ -1,6 +1,6 @@
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
-import Index from "../index";
+import Index from "../../src/pages/index";
 
 describe("Page index", () => {
   it("should render the page", () => {
