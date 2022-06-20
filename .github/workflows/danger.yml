@@ -1,0 +1,36 @@
+name: Danger check pull request main
+
+on:
+  pull_request:
+    branches:
+      - main
+    types: [opened, edited, synchronize]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Build and Testing
+
+    steps:
+      - name: Preparation
+        uses: actions/checkout@master
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - name: npm install
+        run: npm ci
+      - name: eslint install
+        run: sudo npm install -g eslint
+      - name: eslint
+        run: eslint src -o lint-results.json -f json
+      - name: npm build
+        run: npm run build:staging
+      - name: Danger
+        if: ${{ always() }}
+        run: npm run danger ci
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
