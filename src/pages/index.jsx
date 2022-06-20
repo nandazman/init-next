@@ -1,6 +1,8 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
 export default function Home() {
+  const test = "haha";
+  console.log({ test })
   return (
     <div>
       <Head>
