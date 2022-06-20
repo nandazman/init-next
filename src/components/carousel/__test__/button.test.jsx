@@ -1,6 +1,6 @@
 import "@testing-library/jest-dom";
 import { fireEvent, render, screen } from "@testing-library/react";
-import { DotButton } from "./button";
+import { DotButton } from "../button";
 
 describe("Carousel Button", () => {
   it("should render Dots Button", () => {
@@ -14,6 +14,6 @@ describe("Carousel Button", () => {
     expect(onClick).toBeCalledTimes(0);
 
     fireEvent.click(screen.getByTestId("carousel-dot-button"));
-    expect(onClick).toBeCalledTimes(2);
+    expect(onClick).toBeCalledTimes(1);
   })
 });

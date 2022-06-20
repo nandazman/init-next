@@ -11,7 +11,7 @@
     "start:staging": "env-cmd -f .env.staging npm run start",
     "danger": "danger",
     "test": "jest --watch",
-    "test:ci": "npm test -- -u --coverage --coverageReporters='json-summary' --watchAll=false --outputFile test-results.json --json"
+    "test:ci": "npm test -- -u --coverage --watchAll=false --outputFile test-results.json --json"
   },
   "dependencies": {
     "axios": "^0.27.2",
