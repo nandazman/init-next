@@ -1,3 +1,28 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "webextensions": true,
+    "node": true,
+    "jest": true
+  },
+  "overrides": [
+    {
+      "files": ["*.jsx", "*.js"]
+    }
+  ],
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended"
+  ],
+  "rules": {
+    "react/prop-types": "off",
+    "indent": ["warn", 2],
+    "no-console": ["warn"],
+    "no-unused-vars": "warn",
+    "keyword-spacing": ["warn", { "before": true }],
+    "linebreak-style": "off",
+    "object-curly-spacing": ["warn", "always"],
+    "arrow-spacing": "warn"
+  }
 }

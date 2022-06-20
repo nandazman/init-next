@@ -1,0 +1,4 @@
+dist/
+dangerfile.js 
+webpack.*
+serviceWorker.js
