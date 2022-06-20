@@ -1,13 +1,14 @@
 import { danger, fail, message } from "danger";
 const fs = require("fs");
-const jestFunc = require("danger-plugin-jest");
+const jest = require("danger-plugin-jest").default;
 
 const { additions = 0, deletions = 0 } = danger.github.pr;
 message(`Added ${additions} and removed ${deletions} lines.`);
 
+
 const jestContent = fs.readFileSync("test-results.json");
 if (jestContent) {
-  jestFunc({ showSuccessMessage: true });
+  jest({ showSuccessMessage: true });
 }
 
 const coverage = fs.readFileSync("coverage/coverage-summary.json", "utf8");
