@@ -8,11 +8,13 @@
     "start": "next start",
     "lint": "next lint",
     "build:staging": "env-cmd -f .env.staging npm run build",
-    "start:staging": "env-cmd -f .env.staging npm run start"
+    "start:staging": "env-cmd -f .env.staging npm run start",
+    "danger": "danger"
   },
   "dependencies": {
     "axios": "^0.27.2",
     "classnames": "^2.3.1",
+    "danger": "^11.0.7",
     "dayjs": "^1.11.3",
     "embla-carousel-react": "^6.2.0",
     "env-cmd": "^10.1.0",
