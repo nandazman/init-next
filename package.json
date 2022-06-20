@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build:staging": "env-cmd -f .env.staging npm run build",
+    "start:staging": "env-cmd -f .env.staging npm run start"
   },
   "dependencies": {
     "axios": "^0.27.2",
