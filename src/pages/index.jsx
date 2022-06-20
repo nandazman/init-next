@@ -1,8 +1,6 @@
 import Head from 'next/head';
 
 export default function Home() {
-  const test = "hahaz";
-  console.log({ test })
   return (
     <div data-testid="page-index">
       <Head>
