@@ -1,6 +1,6 @@
 import { danger, fail, message } from "danger";
-import jest from "danger-plugin-jest";
 const fs = require("fs");
+const jest = require("danger-plugin-jest");
 
 const { additions = 0, deletions = 0 } = danger.github.pr;
 message(`Added ${additions} and removed ${deletions} lines.`);
