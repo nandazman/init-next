@@ -1,9 +1,10 @@
 name: Danger check pull request main
 
 on:
-  push:
+  pull_request:
     branches:
-      - test
+      - main
+    types: [opened, edited, synchronize]
 
 jobs:
   test:
