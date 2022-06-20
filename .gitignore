@@ -32,4 +32,5 @@ yarn-error.log*
 .vercel
 
 lint-results.json
+test-results.json
 **/.next

@@ -24,6 +24,9 @@ jobs:
         run: sudo npm install -g eslint
       - name: eslint
         run: eslint src -o lint-results.json -f json
+      - name: npm test
+        if: ${{ always() }}
+        run: npm run test:ci
       - name: npm build
         run: npm run build:staging
       - name: Danger
