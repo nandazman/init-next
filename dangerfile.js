@@ -1,26 +1,26 @@
 import { danger, fail, message } from "danger";
-// import jest from "danger-plugin-jest";
+import jest from "danger-plugin-jest";
 const fs = require("fs");
 
 const { additions = 0, deletions = 0 } = danger.github.pr;
 message(`Added ${additions} and removed ${deletions} lines.`);
 
-// const jestContent = fs.readFileSync("test-results.json");
-// if (jestContent) {
-//   jest({ showSuccessMessage: true });
-// }
+const jestContent = fs.readFileSync("test-results.json");
+if (jestContent) {
+  jest({ showSuccessMessage: true });
+}
 
-// const coverage = fs.readFileSync("coverage/coverage-summary.json", "utf8");
-// if (coverage) {
-//   const coverageJson = JSON.parse(coverage);
-//   const summary = coverageJson.total;
-//   const { lines, statements, functions, branches } = summary;
+const coverage = fs.readFileSync("coverage/coverage-summary.json", "utf8");
+if (coverage) {
+  const coverageJson = JSON.parse(coverage);
+  const summary = coverageJson.total;
+  const { lines, statements, functions, branches } = summary;
 
-//   message(`👍 ${lines.pct}% Lines Coverage`);
-//   message(`👍 ${statements.pct}% Statements Coverage`);
-//   message(`👍 ${functions.pct}% Functions Coverage`);
-//   message(`👍 ${branches.pct}% Branches Coverage`);
-// }
+  message(`👍 ${lines.pct}% Lines Coverage`);
+  message(`👍 ${statements.pct}% Statements Coverage`);
+  message(`👍 ${functions.pct}% Functions Coverage`);
+  message(`👍 ${branches.pct}% Branches Coverage`);
+}
 const content = fs.readFileSync("lint-results.json", "utf8");
 if (content) {
   lint(content);

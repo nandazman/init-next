@@ -14,6 +14,6 @@ describe("Carousel Button", () => {
     expect(onClick).toBeCalledTimes(0);
 
     fireEvent.click(screen.getByTestId("carousel-dot-button"));
-    expect(onClick).toBeCalledTimes(1);
+    expect(onClick).toBeCalledTimes(2);
   })
 });
