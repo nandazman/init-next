@@ -1,7 +1,13 @@
+import initHoneyBadger from "src/utils/honeybadger";
 import "../styles/index.scss";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+initHoneyBadger();
+function MyApp({ Component, pageProps, err }) {
+
+  // Workaround for https://github.com/zeit/next.js/issues/8592
+  const modifiedPageProps = { ...pageProps, err };
+
+  return <Component {...modifiedPageProps} />;
 }
 
 export default MyApp;
