@@ -4,7 +4,7 @@ import { render, screen } from "@testing-library/react";
 
 const test = () => (
   <div
-    data-testid="test"
+    data-testid="test-app"
   />
 );
 
@@ -12,6 +12,6 @@ const test = () => (
 describe("Page _app", () => {
   it("should render the page", () => {
     render(<App Component={test} pageProps={{}} />);
-    expect(screen.getByTestId("test")).toBeInTheDocument();
+    expect(screen.getByTestId("test-app")).toBeInTheDocument();
   });
 });
