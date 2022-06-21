@@ -1,6 +1,6 @@
+import App from "@/pages/_app";
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
-import App from "../../src/pages/_app";
 
 const test = () => (
   <div
