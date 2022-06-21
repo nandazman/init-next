@@ -1,6 +1,6 @@
+import { DotButton } from "@/components/carousel/button";
 import "@testing-library/jest-dom";
 import { fireEvent, render, screen } from "@testing-library/react";
-import { DotButton } from "../../../src/components/carousel/button";
 
 describe("Carousel Button", () => {
   it("should render Dots Button", () => {
