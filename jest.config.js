@@ -10,6 +10,7 @@ const customJestConfig = {
   moduleNameMapper: {
     "^@/components/(.*)$": "<rootDir>/src/components/$1",
     "^@/pages/(.*)$": "<rootDir>/src/pages/$1",
+    "^@/utils/(.*)$": "<rootDir>/src/utils/$1",
   },
 };
 module.exports = createJestConfig(customJestConfig);
