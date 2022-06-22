@@ -4,28 +4,4 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  h1, h2, h3, h4, h5 {
-    @apply font-bold font-quicksand;
-  }
-  
-  h1 {
-    @apply text-h1;
-  }
-  h2 {
-    @apply text-h2;
-  }
-  h3 {
-    @apply text-h2;
-  }
-  h4 {
-    @apply text-h2;
-  }
-  h5 {
-    @apply text-h2;
-  }
-
-  :not(h1, h2, h3, h4, h5) {
-    @apply font-montserrat;
-  }
-}
+@import "./base/index.scss";

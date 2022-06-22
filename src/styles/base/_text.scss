@@ -1,0 +1,41 @@
+@layer base {
+  h1, h2, h3, h4, h5 {
+    @apply font-bold font-quicksand;
+  }
+  
+  h1 {
+    @apply text-h1;
+  }
+  h2 {
+    @apply text-h2;
+  }
+  h3 {
+    @apply text-h2;
+  }
+  h4 {
+    @apply text-h2;
+  }
+  h5 {
+    @apply text-h2;
+  }
+
+  :not(h1, h2, h3, h4, h5) {
+    @apply font-montserrat;
+  }
+
+  :not(h1, h2) {
+    @apply leading-normal;
+  }
+
+  h1 {
+    @apply leading-[1.4];
+  }
+
+  .text-button, .text-admin-form, .text-medium-bold, .text-normal-bold {
+    @apply font-semibold;
+  }
+
+  .text-medium-bold {
+    @apply text-medium;
+  }
+}
