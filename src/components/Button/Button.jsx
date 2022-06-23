@@ -14,7 +14,7 @@ export const Button = (props) => {
       data-testid="component-button"
       {...restProps}
       style={{ width }}
-      className={cn("btn", "text-button", className)}
+      className={cn("p-10px rounded-[5px] text-button", className)}
       type={type}
       onClick={onClick}
     >
