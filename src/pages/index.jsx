@@ -1,5 +1,6 @@
 import { Button } from "@/components/Button/Button";
 import { ButtonPurple } from "@/components/Button/ButtonPurple";
+import { Modal } from "@/components/Modal/Modal";
 import Head from 'next/head';
 
 export default function Home() {
@@ -20,6 +21,11 @@ export default function Home() {
       <Button >
         haha
       </Button>
+      <Modal show>
+        <h1 className="text-identity">
+          HALO HAHA
+        </h1>
+      </Modal>
     </div>
   );
 }

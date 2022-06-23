@@ -20,6 +20,7 @@ module.exports = {
       line: "#E0E5EA",
       placeholder: "#B8B8B8",
       "disable-field": "#F1F2F2",
+      modal: "#00000033",
     },
     screens: {
       sm: "576px",
@@ -28,6 +29,9 @@ module.exports = {
       xl: "1200px",
     },
     extend: {
+      borderRadius: {
+        "10px": "10px",
+      },
       spacing: {
         "5px": "5px",
         "10px": "10px",
