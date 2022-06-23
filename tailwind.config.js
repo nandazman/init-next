@@ -2,6 +2,25 @@
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    colors: {
+      identity: "#6C5DD3",
+      "blue-tosca": "#49A0A4",
+      orange: "#E87F2F",
+      "dark-blue": "#1E223F",
+      blue: "#2D3356",
+      red: "#DA4040",
+      green: "#4DA834",
+      grey: "#A0A0A0",
+      black: "#000000",
+      "primary-text": "#4B4B50",
+      "secondary-text": "#8692A6",
+      white: "#FFFFFF",
+      background: "#F6F6F6",
+      "stroke-of-box": "#E6E6E6",
+      line: "#E0E5EA",
+      placeholder: "#B8B8B8",
+      "disable-field": "#F1F2F2",
+    },
     screens: {
       sm: "576px",
       md: "768px",
@@ -26,26 +45,6 @@ module.exports = {
         montserrat: ["Montserrat"],
         quicksand: ["Quicksand"],
       },
-    },
-
-    colors: {
-      identity: "#6C5DD3",
-      "blue-tosca": "#49A0A4",
-      orange: "#E87F2F",
-      "dark-blue": "#1E223F",
-      blue: "#2D3356",
-      red: "#DA4040",
-      green: "#4DA834",
-      grey: "#A0A0A0",
-      black: "#000000",
-      "primary-text": "#4B4B50",
-      "secondary-text": "#8692A6",
-      white: "#FFFFFF",
-      background: "#F6F6F6",
-      "stroke-of-box": "#E6E6E6",
-      line: "#E0E5EA",
-      placeholder: "#B8B8B8",
-      "disable-field": "#F1F2F2",
     },
 
     container: {

@@ -1,3 +1,5 @@
+import { Button } from "@/components/Button/Button";
+import { ButtonPurple } from "@/components/Button/ButtonPurple";
 import Head from 'next/head';
 
 export default function Home() {
@@ -9,15 +11,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1 className="text-identity">
-        H1 Hello world
-      </h1>
-      <h2>
-        H2 LALALA
-      </h2>
-      <p className="text-button">
-        HMMMM
-      </p>
+      <h1 className="text-identity">H1 Hello world</h1>
+      <h2>H2 LALALA</h2>
+      <p className="text-button bg-green">HMMMM</p>
+      <ButtonPurple>
+        haha
+      </ButtonPurple>
+      <Button >
+        haha
+      </Button>
     </div>
-  )
+  );
 }
