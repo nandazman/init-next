@@ -1,4 +1,4 @@
-import { DotButton } from "@/components/Carousel/cutton";
+import { DotButton } from "@/components/Carousel/Button";
 import "@testing-library/jest-dom";
 import { fireEvent, render, screen } from "@testing-library/react";
 
