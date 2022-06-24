@@ -14,6 +14,11 @@ const HONEYBADGER_REVISION = execSync('git rev-parse HEAD').toString().trim()
 const nextConfig = {
   productionSourceMaps: true,
   reactStrictMode: true,
+  images: {
+    domains: [
+      "storage.googleapis.com",
+    ],
+  },
   env: {
     HONEYBADGER_API_KEY,
     HONEYBADGER_REVISION,
