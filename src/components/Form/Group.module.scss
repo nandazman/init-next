@@ -1,0 +1,7 @@
+.form-group {
+  &:not(.form-group-inline) {
+    input {
+      display: block;
+    }
+  }
+}
