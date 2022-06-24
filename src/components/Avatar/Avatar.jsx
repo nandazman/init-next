@@ -8,7 +8,7 @@ export default function Avatar({ name, role, src }) {
       </div>
       <div>
         <p className="text-normal-bold text-dark-blue">{name}</p>
-        <p className="text-small text-secondary-text">{role}</p>
+        <p className="text-small text-secondary">{role}</p>
       </div>
     </div>
   );

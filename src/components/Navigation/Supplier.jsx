@@ -4,7 +4,7 @@ import NotificationIcon from "../Icon/Notification";
 
 export const NavbarSupplier = () => {
   return (
-    <nav className="relative bg-[#FCFCFC] py-15px px-20px flex justify-between items-center">
+    <nav className="relative bg-white py-15px px-20px flex justify-between items-center">
       <span className="cursor-pointer">
         <Logo />
       </span>

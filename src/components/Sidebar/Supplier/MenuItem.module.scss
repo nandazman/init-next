@@ -1,0 +1,11 @@
+.menu {
+  @apply cursor-pointer h-40px px-15px rounded-12px text-medium flex items-center gap-x-10px text-secondary;
+  &.active, &:hover {
+    @apply bg-identity text-white;
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+  }
+}

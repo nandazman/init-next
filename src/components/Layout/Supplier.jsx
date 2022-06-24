@@ -1,5 +1,5 @@
 import { NavbarSupplier } from "../Navigation/Supplier";
-import SupplierSidebar from "../Sidebar/Supplier";
+import SupplierSidebar from "../Sidebar/Supplier/Supplier";
 
 export const LayoutSupplier = ({ children }) => {
   return (

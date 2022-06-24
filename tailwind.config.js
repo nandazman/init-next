@@ -12,8 +12,8 @@ module.exports = {
       green: "#4DA834",
       grey: "#A0A0A0",
       black: "#000000",
-      "primary-text": "#4B4B50",
-      "secondary-text": "#8692A6",
+      "primary": "#4B4B50",
+      "secondary": "#8692A6",
       white: "#FFFFFF",
       background: "#F6F6F6",
       "stroke-of-box": "#E6E6E6",
@@ -37,6 +37,7 @@ module.exports = {
       },
       borderRadius: {
         "10px": "10px",
+        "12px": "12px"
       },
       spacing: {
         "5px": "5px",
