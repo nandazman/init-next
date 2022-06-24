@@ -8,7 +8,7 @@ export const NavbarSupplier = () => {
       <span className="cursor-pointer">
         <Logo />
       </span>
-      <div className="w-[250px] flex gap-x-20px items-center">
+      <div className="w-250 flex gap-x-20px items-center">
         <NotificationIcon />
         <Avatar
           name="John Doe"

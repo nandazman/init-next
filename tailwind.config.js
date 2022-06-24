@@ -29,6 +29,9 @@ module.exports = {
       xl: "1200px",
     },
     extend: {
+      width: {
+        "250": "250px"
+      },
       boxShadow: {
         normal: "0px 6px 13px rgba(0, 0, 0, 0.1)",
       },
