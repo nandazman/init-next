@@ -6,9 +6,9 @@ export const LayoutSupplier = ({ children }) => {
     <>
       <NavbarSupplier />
 
-      <div className="min-h-screen bg-background flex">
+      <div className="bg-background relative flex">
         <SupplierSidebar />
-        <main className="py-40px pl-20px pr-30px flex-grow">{children}</main>
+        <main className="py-40px pl-20px pr-30px min-h-screen">{children}</main>
       </div>
     </>
   );
