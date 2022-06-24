@@ -1,6 +1,7 @@
-import { LayoutSupplier } from "@/components/Layout/Supplier";
-import ProgressSuplier from "@/components/Progress/ProgressSuplier";
 import Head from "next/head";
+import ProgressSuplier from "../../components/Supplier/Dashboard/Progress";
+import StatisticSupplier from "../../components/Supplier/Dashboard/Statistic";
+import { LayoutSupplier } from "../../components/Supplier/Layout";
 
 export default function supplierIndex() {
   return (
@@ -12,7 +13,8 @@ export default function supplierIndex() {
       </Head>
       <div data-testid="pages-supplier-index">
         <LayoutSupplier>
-          <ProgressSuplier />
+          <ProgressSuplier className="mb-32px" />
+          <StatisticSupplier className="mb-32px" />
         </LayoutSupplier>
       </div>
     </>

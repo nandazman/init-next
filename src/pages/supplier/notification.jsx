@@ -1,5 +1,5 @@
-import { LayoutSupplier } from "@/components/Layout/Supplier";
 import Head from "next/head";
+import { LayoutSupplier } from "../../components/Supplier/Layout";
 
 export default function supplierIndex() {
   return (

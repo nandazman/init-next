@@ -1,9 +1,10 @@
-import { Button } from "../Button/Button";
-import ProgressBar from "./ProgreessBar";
+import Button from "@/components/Button/Button";
+import ProgressBar from "@/components/Progress/ProgreessBar";
+import cn from "classnames";
 
-export default function ProgressSuplier() {
+export default function ProgressSuplier({ className }) {
   return (
-    <div className="bg-white py-30px px-10px">
+    <div className={cn("bg-white py-30px px-10px", className)}>
       <div className="w-[1000px] mx-auto">
         <div className="mb-30px">
           <h5 className="text-black mb-10px">Progress Toko Kamu</h5>

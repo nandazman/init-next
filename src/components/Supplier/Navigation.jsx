@@ -2,7 +2,7 @@ import Avatar from "../Avatar/Avatar";
 import { Logo } from "../Icon/Logo";
 import NotificationIcon from "../Icon/Notification";
 
-export const NavbarSupplier = () => {
+export default function NavbarSupplier() {
   return (
     <nav className="relative top-0 left-0 w-full bg-white py-15px px-20px flex justify-between items-center z-10">
       <span className="cursor-pointer">
@@ -18,4 +18,4 @@ export const NavbarSupplier = () => {
       </div>
     </nav>
   );
-};
+}

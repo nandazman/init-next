@@ -1,7 +1,7 @@
 import cn from "classnames";
 import { bgColors } from "src/lib/constant";
 
-export const Button = (props) => {
+export default function Button(props) {
   const {
     onClick,
     className,
@@ -31,4 +31,4 @@ export const Button = (props) => {
       {children}
     </button>
   );
-};
+}
