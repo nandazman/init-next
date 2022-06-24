@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import styles from "./MenuItem.module.scss";
 
-export default function MenuItem({ text, href, icon }) {
+export default function MenuItem({ text = "", href = "/", icon = <></> }) {
   const [active, setActive] = useState(false);
   const { asPath, isReady } = useRouter();
 
@@ -21,11 +21,12 @@ export default function MenuItem({ text, href, icon }) {
           {
             [styles.active]: active,
           },
-          styles.menu
+          styles.menu,
+          "mb-16px last:mb-0"
         )}
       >
         <span className="w-24px">{icon}</span>
-        <span className="">{text}</span>
+        <span>{text}</span>
       </a>
     </Link>
   );
