@@ -19,6 +19,9 @@ export default function StatisticSupplier({ className }) {
         <WalletCardSupplier />
         <PaymentCardSupplier />
       </div>
+      <div className="flex justify-between gap-x-28px">
+        
+      </div>
     </div>
   );
 }
