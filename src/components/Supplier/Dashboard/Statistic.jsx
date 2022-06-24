@@ -1,3 +1,6 @@
+import PaymentCardSupplier from "./Statistic/PaymentCard";
+import WalletCardSupplier from "./Statistic/WalletCard";
+
 export default function StatisticSupplier({ className }) {
   return (
     <div className={className}>
@@ -12,7 +15,10 @@ export default function StatisticSupplier({ className }) {
           <span className="font-bold">20 September 2021 17:23 WIB</span>
         </p>
       </div>
-      <div className="flex"></div>
+      <div className="flex justify-between gap-x-32px mb-28px">
+        <WalletCardSupplier />
+        <PaymentCardSupplier />
+      </div>
     </div>
   );
 }
