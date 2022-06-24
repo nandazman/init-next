@@ -1,3 +1,16 @@
 .btn {
-  height: 45px;
+  height: 47px;
+  @apply py-10px px-40px;
+  &.btn-small {
+    height: 44px;
+  }
+  &.btn-medium {
+    max-width: 250px;
+    width: 100%;
+  }
+  &.btn-large {
+    height: 50px;
+    max-width: 400px;
+    width: 100%;
+  }
 }
