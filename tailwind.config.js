@@ -12,8 +12,8 @@ module.exports = {
       green: "#4DA834",
       grey: "#A0A0A0",
       black: "#000000",
-      "primary": "#4B4B50",
-      "secondary": "#8692A6",
+      primary: "#4B4B50",
+      secondary: "#8692A6",
       white: "#FFFFFF",
       background: "#F6F6F6",
       "stroke-of-box": "#E6E6E6",
@@ -30,14 +30,15 @@ module.exports = {
     },
     extend: {
       width: {
-        "250": "250px"
+        250: "250px",
       },
       boxShadow: {
         normal: "0px 6px 13px rgba(0, 0, 0, 0.1)",
       },
       borderRadius: {
+        "5px": "5px",
         "10px": "10px",
-        "12px": "12px"
+        "12px": "12px",
       },
       spacing: {
         "5px": "5px",

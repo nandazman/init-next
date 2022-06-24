@@ -9,7 +9,7 @@ export default function Admin() {
       <LayoutAdmin>
         <h1 className="text-identity">H1 Hello world</h1>
         <h2>H2 LALALA</h2>
-        <p className="text-button bg-green">HMMMM</p>
+        <p className="bg-green">HMMMM</p>
         <ButtonPurple>haha</ButtonPurple>
         <Button>haha</Button>
         <Modal show>

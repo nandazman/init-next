@@ -31,8 +31,12 @@
     @apply leading-[1.4];
   }
 
-  .text-button, .text-admin-form, .text-medium-bold, .text-normal-bold {
+  .text-admin-form, .text-medium-bold, .text-normal-bold {
     @apply font-semibold;
+  }
+
+  .text-button {
+    @apply font-medium;
   }
 
   .text-medium-bold {

@@ -1,4 +1,5 @@
 import cn from "classnames";
+import { bgColors } from "src/lib/constant";
 
 export const Button = (props) => {
   const {
@@ -6,18 +7,24 @@ export const Button = (props) => {
     className,
     type = "button",
     children,
-    width = "100px",
-    variant,
+    width,
+    size,
+    variant = "identity",
     ...restProps
   } = props;
 
-  const btnVariant = variant ? `btn-${variant}` : ""
+  const btnSize = size ? `btn-${size}` : "";
   return (
     <button
       data-testid="component-button"
       {...restProps}
       style={{ width }}
-      className={cn("p-10px rounded-[5px] text-button", className, btnVariant)}
+      className={cn(
+        "btn",
+        className,
+        btnSize,
+        bgColors[variant]
+      )}
       type={type}
       onClick={onClick}
     >

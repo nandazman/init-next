@@ -1,4 +1,5 @@
 import { LayoutSupplier } from "@/components/Layout/Supplier";
+import ProgressSuplier from "@/components/Progress/ProgressSuplier";
 import Head from "next/head";
 
 export default function supplierIndex() {
@@ -11,7 +12,7 @@ export default function supplierIndex() {
       </Head>
       <div data-testid="pages-supplier-index">
         <LayoutSupplier>
-          hehe
+          <ProgressSuplier />
         </LayoutSupplier>
       </div>
     </>

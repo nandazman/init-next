@@ -26,7 +26,7 @@ describe("Component Button", () => {
       rerender(<Button className="test" />);
 
       expect(screen.getByTestId("component-button")).toHaveClass(
-        "btn text-button test"
+        "test"
       );
     });
 

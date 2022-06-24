@@ -1,5 +1,5 @@
+import initHoneyBadger from "../lib/utils/honeybadger";
 import "../styles/index.scss";
-import initHoneyBadger from "../utils/honeybadger";
 
 initHoneyBadger();
 function MyApp({ Component, pageProps, err }) {

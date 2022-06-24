@@ -8,7 +8,7 @@ export const LayoutSupplier = ({ children }) => {
 
       <div className="min-h-screen bg-background flex">
         <SupplierSidebar />
-        <main className="py-40px pl-20px pr-30px">{children}</main>
+        <main className="py-40px pl-20px pr-30px flex-grow">{children}</main>
       </div>
     </>
   );
